@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:ci
-          name: Update NPM
+          name:Update NPM
           command: "sudo npm install -g npm"
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
